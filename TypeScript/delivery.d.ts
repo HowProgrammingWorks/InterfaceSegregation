@@ -12,7 +12,7 @@ export interface IAttachment {
   readable: NodeJS.ReadableStream;
 }
 
-export class Attachment implements IFile {
+export class Attachment implements IAttachment {
   filename: string;
   readable: NodeJS.ReadableStream;
   constructor(filename: string);
